@@ -1,0 +1,414 @@
+  /* Tablet Styles */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 2rem;
+    }
+    
+    .about-content,
+    .contact-content {
+        gap: 40px;
+    }
+    
+    .programs-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    /* Navigation */
+    .nav-container {
+        height: 70px;
+        padding: 0 15px;
+    }
+    
+    .nav-logo {
+        font-size: 1.2rem;
+    }
+    
+    .nav-logo i {
+        font-size: 1.5rem;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: var(--white);
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 50px;
+        transition: 0.4s ease;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-item {
+        margin: 15px 0;
+    }
+    
+    .nav-link {
+        font-size: 1.1rem;
+        padding: 10px 20px;
+    }
+    
+    /* Hero Section */
+    .hero {
+        height: 100vh;
+        min-height: 600px;
+    }
+    
+    .hero-content {
+        padding: 0 15px;
+    }
+    
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.5rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 40px;
+    }
+    
+    .btn {
+        padding: 12px 25px;
+        font-size: 0.9rem;
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    .stat-item {
+        margin: 0;
+    }
+    
+    .stat-number {
+        font-size: 2.2rem;
+    }
+    
+    /* Sections */
+    section {
+        padding: 60px 0;
+    }
+    
+    .section-header {
+        margin-bottom: 40px;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+    }
+    
+    /* About Section */
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .about-card {
+        padding: 25px;
+    }
+    
+    .card-icon {
+        font-size: 2.5rem;
+    }
+    
+    .about-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    /* Programs Section */
+    .programs-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .program-card {
+        padding: 30px 25px;
+    }
+    
+    .program-card .card-icon {
+        font-size: 2.5rem;
+    }
+    
+    .program-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    /* Achievements Section */
+    .achievements-slider {
+        max-width: 100%;
+    }
+    
+    .slider-container {
+        height: 350px;
+    }
+    
+    .achievement-card {
+        padding: 40px 30px;
+    }
+    
+    .achievement-icon {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+    
+    .achievement-card h3 {
+        font-size: 1.5rem;
+    }
+    
+    .achievement-card p {
+        font-size: 1rem;
+    }
+    
+    .slider-controls {
+        padding: 0 10px;
+    }
+    
+    .slider-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    /* Gallery Section */
+    .gallery-filter {
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+    
+    .filter-btn {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .gallery-item img {
+        height: 200px;
+    }
+    
+    /* News Section */
+    .news-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .news-card {
+        margin: 0 auto;
+        max-width: 400px;
+    }
+    
+    .news-image img {
+        height: 200px;
+    }
+    
+    .news-content {
+        padding: 25px;
+    }
+    
+    .news-title {
+        font-size: 1.2rem;
+    }
+    
+    /* Contact Section */
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .info-card {
+        padding: 25px;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .info-icon {
+        margin: 0 auto 20px;
+    }
+    
+    .contact-form {
+        padding: 30px 25px;
+    }
+    
+    .form-group {
+        margin-bottom: 20px;
+    }
+    
+    /* Footer */
+    .footer {
+        padding: 50px 0 20px;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+    
+    .footer-section h4 {
+        margin-bottom: 15px;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 20px;
+    }
+    
+    /* Modal */
+    .modal-content {
+        margin: 10% auto;
+        max-width: 95%;
+    }
+    
+    .modal-close {
+        top: -35px;
+        right: 5px;
+    }
+    
+    /* Back to Top */
+    .back-to-top {
+        width: 45px;
+        height: 45px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 1rem;
+    }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+    /* Hero Section */
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.3rem;
+    }
+    
+    .hero-description {
+        font-size: 0.9rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    /* Sections */
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    /* Cards */
+    .about-card,
+    .program-card,
+    .info-card,
+    .contact-form {
+        padding: 20px;
+    }
+    
+    /* Gallery */
+    .gallery-item img {
+        height: 180px;
+    }
+    
+    /* News */
+    .news-image img {
+        height: 180px;
+    }
+    
+    .news-content {
+        padding: 20px;
+    }
+    
+    /* Form */
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Landscape Mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        height: 120vh;
+    }
+    
+    .nav-menu {
+        height: calc(100vh - 70px);
+        overflow-y: auto;
+    }
+    
+    .hero-stats {
+        flex-direction: row;
+        gap: 40px;
+    }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .hero-background {
+        background-image: url('https://smpitmtakaranganyar.sch.id/img/logo%20smp%20mta.png')}
+    }
